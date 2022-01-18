@@ -29,16 +29,20 @@ public class FileParsingTest {
         assertThat(parsedPdf.author).contains("Marc Philipp");
     }
 
-   /* @Test
+    @Test
     void parseXlsTest() throws Exception {
         try (InputStream stream = cl.getResourceAsStream("example.xlsx")) {
             XLS parsed = new XLS(stream);
-            assertThat(parsed.excel.getSheetAt(0).getRow(0).getCell(0).getStringCellValue()).isEqualTo("gender");
-            System.out.println();
+            assertThat(parsed.excel
+                    .getSheetAt(0)
+                    .getRow(0)
+                    .getCell(0)
+                    .getStringCellValue()).isEqualTo("gender");
+            System.out.println("");
         }
-    }*/
+    }
 
-        @Test
+       /* @Test
         void parseCsvTest () throws Exception {
             try (InputStream stream = cl.getResourceAsStream("example.csv")) {
                 CSVReader reader = new CSVReader(new InputStreamReader(stream));
@@ -48,6 +52,6 @@ public class FileParsingTest {
                         .contains(new String[] {"Author", "Book"});
                 System.out.println();
             }
-        }
+        }*/
     }
 
