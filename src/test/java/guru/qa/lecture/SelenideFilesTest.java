@@ -1,12 +1,7 @@
-package guru.qa;
+package guru.qa.lecture;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.FileDownloadMode;
 import org.junit.jupiter.api.Test;
-
-import java.io.*;
-import java.nio.charset.StandardCharsets;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
